@@ -5,4 +5,9 @@ void main() {
   var Class = '2nd year';
   num percentage = 75.13;
   String result = 'Pass';
+  print(name);
+  print(age);
+  print(Class);
+  print(percentage);
+  print(result);
 }
