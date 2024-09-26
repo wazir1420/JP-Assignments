@@ -1,22 +1,27 @@
+//Create Map variable name world then inside it create countries Map,
+//Key will be the name country & country value will have another map
+//having capitalCity, currency and language to it. by using any country
+//key print all the value of Capital & Currency.
 void main() {
-  // Create a map to store names and phone numbers
-  Map<String, String> phoneBook = {
-    'John': '123-456-7890',
-    'Jane': '987-654-3210',
-    'Mike': '555-1234',
-    'Anna': '222-3333',
-    'Lily': '4444'
-  };
-
-  // Use a list to find keys with length 4
-  List<String> keysWithLength4 = [];
-
-  for (var key in phoneBook.keys) {
-    if (key.length == 4) {
-      keysWithLength4.add(key);
+  Map world = {
+    'countries': {
+      'Pakistan': {
+        'capitalCity': 'Islamabad',
+        'currency': 'Rupees',
+        'language': 'Urdu'
+      },
+      'India': {
+        'capitalCity': 'Delhi',
+        'currency': 'Rupees',
+        'language': 'Hindi'
+      },
+      'China': {
+        'capitalCity': 'Shangai',
+        'currency': 'yuan renminbi',
+        'language': 'Chinese'
+      }
     }
-  }
-
-  // Output the result
-  print(keysWithLength4);
+  };
+  var details = world['countries'];
+  print(details['China']);
 }
